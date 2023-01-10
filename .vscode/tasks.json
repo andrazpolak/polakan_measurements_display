@@ -4,6 +4,11 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "dashboard - start",
+      "type": "shell",
+      "command": "pipenv run panel serve dashboard/index.py "
+    },
+    {
       "label": "Test - all",
       "type": "shell",
       "command": "pipenv run pytest tests -xs"

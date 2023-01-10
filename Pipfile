@@ -39,6 +39,7 @@ jsonschema = "*"
 atpthings = "*"
 apscheduler = "*"
 molmass = "*"
+kds = {editable = true, ref = "master", git = "https://github.com/KnaufAI/knauf_data_science.git"}
 
 [dev-packages]
 

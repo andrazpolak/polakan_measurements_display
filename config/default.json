@@ -1,0 +1,613 @@
+{
+  "metadata": [
+    {
+      "name_id": "nominal_density",
+      "label": "Nominal volume mass density",
+      "description": "Nominal volume mass density",
+      "type_acquisition": "declaration",
+      "unit": "kg/m^3",
+      "unit_label": "kg/m³"
+    },
+    {
+      "name_id": "mass_density_nominal",
+      "label": "Nominal volume mass density",
+      "description": "Nominal volume mass density",
+      "type_acquisition": "declaration",
+      "unit": "kg/m^3",
+      "unit_label": "kg/m³"
+    },
+    {
+      "name_id": "volume_mass_density_nominal",
+      "label": "Nominal volume mass density",
+      "description": "Nominal volume mass density",
+      "type_acquisition": "declaration",
+      "unit": "kg/m^3",
+      "unit_label": "kg/m³"
+    },
+    {
+      "name_id": "mass_density",
+      "label": "Mass density",
+      "description": "Density",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kg/m^3",
+      "unit_label": "kg/m³"
+    },
+    {
+      "name_id": "volume_mass_density",
+      "label": "Volume mass density",
+      "description": "Volume mass density",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kg/m^3",
+      "unit_label": "kg/m³"
+    },
+    {
+      "name_id": "nominal_thickness",
+      "label": "Nominal thickness",
+      "name": "",
+      "description": "",
+      "type_acquisition": "declaration",
+      "unit": "mm"
+    },
+    {
+      "name_id": "thickness_nominal",
+      "label": "Nominal thickness",
+      "name": "",
+      "description": "",
+      "type_acquisition": "declaration",
+      "unit": "mm"
+    },
+    {
+      "name_id": "thickness",
+      "label": "Thickness",
+      "name": "",
+      "description": "",
+      "type_acquisition": "declaration",
+      "unit": "mm"
+    },
+    {
+      "name_id": "crimp",
+      "label": "Crimp",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit_label": "ratio"
+    },
+    {
+      "name_id": "melt_temperature",
+      "label": "Melt temperature",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "°C"
+    },
+    {
+      "name_id": "melt_temperature_target",
+      "label": "Melt temperature",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "°C"
+    },
+    {
+      "name_id": "velocity_w4",
+      "label": "Wheel velocity W4",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "rpm"
+    },
+    {
+      "name_id": "velocity_w1",
+      "label": "Wheel velocity W1",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "rpm"
+    },
+    {
+      "name_id": "velocity_ratio_w4w1",
+      "label": "Wheel velocity ratio W4/W1",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value_calculated",
+      "unit": "ratio"
+    },
+
+    {
+      "name_id": "rmw_fiberizer_wheel_velocity_w4",
+      "label": "Wheel velocity W4",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "rpm"
+    },
+    {
+      "name_id": "rmw_fiberizer_wheel_velocity_w4_target",
+      "label": "Wheel velocity W4 target",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "rpm"
+    },
+    {
+      "name_id": "rmw_fiberizer_wheel_velocity_w1",
+      "label": "Wheel velocity W1",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "rpm"
+    },
+    {
+      "name_id": "rmw_fiberizer_wheel_velocity_w1_target",
+      "label": "Wheel velocity W1",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value",
+      "unit": "rpm"
+    },
+    {
+      "name_id": "rmw_fiberizer_wheel_velocity_ratio_w4w1",
+      "label": "Wheel velocity ratio W4/W1",
+      "name": "",
+      "description": "",
+      "type_acquisition": "process_value_calculated",
+      "unit": "ratio"
+    },
+    {
+      "name_id": "shot",
+      "label": "Shot",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit_input": "%",
+      "unit": "",
+      "unit_display": "%"
+    },
+    {
+      "name_id": "shot_count",
+      "label": "Shot measurements count"
+    },
+    {
+      "name_id": "shot_std",
+      "label": "Shot measurements std",
+      "unit_input": "%",
+      "unit": "",
+      "unit_display": "%"
+    },
+
+    {
+      "name_id": "shot_model",
+      "label": "Shot (model)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "calculation_model",
+      "unit_input": "%",
+      "unit": "",
+      "unit_display": "%"
+    },
+    {
+      "name_id": "shot_model_error",
+      "label": "Shot (model error)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "calculation_model",
+      "unit_input": "%",
+      "unit": "",
+      "unit_display": "%"
+    },
+    {
+      "name_id": "shot_model_error_abs",
+      "label": "Shot (model error absolute value)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "calculation_model",
+      "units": "%"
+    },
+    {
+      "name_id": "fiber_diameter",
+      "label": "Fiber diameter",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "m"
+    },
+    {
+      "name_id": "fiber_diameter_count",
+      "label": "Fiber diameter count"
+    },
+    {
+      "name_id": "fiber_diameter_std",
+      "label": "Fiber diameter std",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "m"
+    },
+    {
+      "name_id": "fiber_diameter_model",
+      "label": "Fiber diameter (model)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "calculation_model",
+      "unit": "m"
+    },
+    {
+      "name_id": "fiber_diameter_model_error",
+      "label": "Fiber diameter (model error)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "calculation_model",
+      "unit": "m"
+    },
+    {
+      "name_id": "fiber_diameter_model_error_abs",
+      "label": "Fiber diameter (model error absolute value)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "calculation_model",
+      "unit": "m"
+    },
+    {
+      "name_id": "air_flow_resistivity",
+      "label": "Air flow resistivity",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_count",
+      "label": "Air flow resistivity"
+    },
+    {
+      "name_id": "air_flow_resistivity_std",
+      "label": "Air flow resistivity",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_model",
+      "label": "Air flow resistivity (model)",
+      "name": "",
+      "description": "",
+
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_model_error",
+      "label": "Air flow resistivity (error)",
+      "name": "",
+      "description": "",
+
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_model_error_abs",
+      "label": "Air flow resistivity (model error absolute value)",
+      "name": "",
+      "description": "",
+
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_sheet",
+      "label": "Air flow resistivity (sheet)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_sheet_model",
+      "label": "Air flow resistivity (sheet) (model)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_sheet_model_error",
+      "label": "Air flow resistivity (sheet) (model error)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_sheet_model_error_abs",
+      "label": "Air flow resistivity (sheet) (model error absolute value)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m^4",
+      "unit_label": "kN·s/m⁴"
+    },
+    {
+      "name_id": "air_flow_resistivity_nominal",
+      "label": "Air flow resistivity (nominal)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kN·s/m⁴"
+    },
+    {
+      "name_id": "melt_viscosity_log10",
+      "label": "Melt viscosity (log10)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "log(η/Pa·s)"
+    },
+    {
+      "name_id": "melt_viscosity",
+      "label": "Melt viscosity",
+      "name": "",
+      "description": "Viscosity me",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "Pa·s"
+    },
+    {
+      "name_id": "melt_viscosity_fact_sage_log10",
+      "label": "Melt viscosity (fact_sage) (log10)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "log(η/Pa·s)"
+    },
+    {
+      "name_id": "melt_viscosity_fact_sage",
+      "label": "Melt viscosity (fact_sage)",
+      "name": "",
+      "description": "Viscosity me",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "Pa·s"
+    },
+    {
+      "name_id": "lambda_at200",
+      "label": "Lambda @ 200 °C",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "mW/(m·K)",
+      "environmental_conditions": { "temperature": 473.15 }
+    },
+    {
+      "name_id": "lambda_at10",
+      "label": "Lambda (@ 10 °C)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "mW/(m·K)",
+      "environmental_conditions": { "temperature": 283.15 }
+    },
+    {
+      "name_id": "lambda_at10_model",
+      "label": "Lambda (@ 10 °C) (model)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "mW/(m·K)",
+      "environmental_conditions": { "temperature": 283.15 }
+    },
+    {
+      "name_id": "lambda_at10_model_error",
+      "label": "Lambda (@ 10 °C) (model error)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "mW/(m·K)",
+      "environmental_conditions": { "temperature": 283.15 }
+    },
+    {
+      "name_id": "lambda_at10_model_error_abs",
+      "label": "Lambda (@ 10 °C) (model error absolute value)",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "mW/(m·K)",
+      "environmental_conditions": { "temperature": 283.15 }
+    },
+    {
+      "name_id": "compression_strength",
+      "label": "Compression strength",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kPa"
+    },
+    {
+      "name_id": "tensile_strength",
+      "label": "???",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kPa"
+    },
+    {
+      "name_id": "shear_strength",
+      "label": "??",
+      "name": "",
+      "description": "",
+      "type_acquisition": "laboratory_measurement",
+      "unit": "kPa"
+    },
+    {
+      "name_id": "product_name",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+
+    {
+      "name_id": "sampling_timestamp_utc",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "sampling_location",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "division_name",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "plant_name",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "product_line",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "melt_viscosity_fact_sage",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "melt_viscosity_vft_parameter_a",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "melt_viscosity_vft_parameter_b",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "melt_viscosity_vft_parameter_t0",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_sio2",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_al2o3",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_fe2o3",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_cao",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_mgo",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_na2o",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_k2o",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_tio2",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "mass_content_mno",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+
+    {
+      "name_id": "mass_content_p2o5",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+
+    {
+      "name_id": "mass_content_cr2o3",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+
+    {
+      "name_id": "mass_content_so3",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    },
+    {
+      "name_id": "new",
+      "label": "",
+      "name": "",
+      "description": "",
+      "unit": ""
+    }
+  ]
+}

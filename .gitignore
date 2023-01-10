@@ -132,9 +132,9 @@ dmypy.json
 
 
 ### Ignore in project
-# .venv
-# .env
-# data
+.venv
+.env
+data
 
 
 ###-----------------
