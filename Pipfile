@@ -1,0 +1,46 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# git
+pre-commit = "*"
+# Format and lint
+black = "*"
+flake8 = "*"
+pep8-naming = "*"
+# Render
+pprintpp = "*"
+holoviews = "*"
+datashader = "*"
+bokeh = "*"
+panel = "*"
+# Jupyter notebook
+ipykernel = "*"
+notebook = "*"
+# Data science
+numpy = "*"
+pandas = "*"
+scipy = "*"
+scikit-learn = "*"
+# tensorflow = "*"
+# torch  = "*" 
+# torchvision  = "*"
+# torchaudio = "*"
+# Database
+sqlalchemy = "*"
+pymysql = "*"
+mysql-connector-python = "*"
+# Test
+pytest = "*"
+# Other
+jsonschema = "*"
+atpthings = "*"
+apscheduler = "*"
+molmass = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

@@ -1,0 +1,44 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Test - all",
+      "type": "shell",
+      "command": "pipenv run pytest tests -xs"
+    },
+
+    {
+      "label": "Test - file",
+      "type": "shell",
+      "command": "pipenv run pytest tests/test_atp_dict.py -x"
+    },
+
+    {
+      "label": "Test - function",
+      "type": "shell",
+      "command": "pipenv run pytest tests/test_atp_dict.py::test_first -x"
+    },
+
+    // Bash
+    {
+      "label": "Bash - package release (create git tag)",
+      "type": "shell",
+      "command": "./scripts/release.sh"
+    },
+    // Git - pre-commit
+    {
+      "label": "preCommit - install",
+      "detail": "Install pre-commit hooks from .pre-commit-config.yaml to .git hooks.",
+      "type": "shell",
+      "command": "pre-commit install"
+    },
+    {
+      "label": "preCommit - run all",
+      "detail": "Run pre-commit hooks described in .pre-commit-config.yaml",
+      "type": "shell",
+      "command": "pipenv run pre-commit run --all-files"
+    }
+  ]
+}
